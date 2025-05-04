@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Режим дня</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image:
+url('background4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        nav {
+            width: 220px;
+            background: #2980b9;
+            padding: 40px 0 0 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+            min-height: 100vh;
+        }
+        nav a {
+            display: block;
+            padding: 15px 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #1a5e8a;
+        }
+        .content {
+            flex: 1;
+            padding: 40px;
+            background: #fff;
+            margin: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        @media (max-width: 700px) {
+            .container { flex-direction: column; }
+            nav { width: 100%; min-height: unset; display: flex; flex-direction: row; padding: 0; }
+            nav a { flex: 1; padding: 15px 0; text-align: center; font-size: 16px; }
+            .content { margin: 0; border-radius: 0; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href='page1.html'>Здоровый образ жизни</a>
+            <a href='page2.html'>Активность</a>
+            <a href='page3.html'>Питание</a>
+            <a href='page4.html' class="active">Режим дня</a>
+            <a href='page5.html'>Вредные привычки</a>
+            <a href='page6.html'>О сайте</a>
+        </nav>
+        <div class='content'>
+            <h1>Режим дня и здоровый сон</h1>
+            <p>
+                
+                Грамотно организованный режим дня - основа здорового образа жизни. Чередование труда и отдыха, регулярные приемы пищи, своевременный подъем и отход ко сну помогают поддерживать высокий уровень работоспособности и предотвращают переутомление. Соблюдение режима способствует гармоничному развитию и укреплению здоровья.<br><br>
+                Здоровый сон необходим для восстановления сил и нормального функционирования всех систем организма. Взрослому человеку требуется 7–8 часов сна в сутки. Качественный сон улучшает настроение, укрепляет иммунитет и способствует профилактике хронических заболеваний. Для хорошего сна важны не только его продолжительность, но и глубина, а также спокойная обстановка перед сном.
+            </p>
+                              <img src="zos4.jpg" alt="Здоровый образ жизни" style="margin-top: 20px; max-width: 100%; border-radius: 8pxp;">
+ </div>
+    </div>
+</body>
+</html>
